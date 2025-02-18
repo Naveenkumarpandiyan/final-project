@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Learning Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body background="back.jpg">
+    <header>
+      <h1><B><I><center>AUTHOR BOOK PROFILE MANAGEMENT</center></I></B></h1>
+      <p>Discover authors and their books</p>
+    </header>
+
+    <main>
+      <!-- Authors Section -->
+      <section id="authors">
+        <h2>Authors</h2>
+        <div class="author-list">
+          <div class="author-card">
+            <img src="C:\Users\ELCOT\Desktop\program\shakesphere.jpg" alt="Shakespeare" />
+            <h4>Shakespeare</h4>
+            <h5>Baptized: <br>April 26, 1564, Stratford-upon-Avon, Warwickshire, England<br>
+                Died:<br> April 23, 1616, Stratford-upon-Avon<br>
+                Notable Works:<br> “A Midsummer Night’s Dream” “All’s Well That Ends Well” </h5>
+                <button><a href="shakesphere.html"> read more</a></button>
+            </div>
+          <div class="author-card" onclick="showBooks(2)">
+            <img src="george.jpg" alt="George Orwell" />
+            <h4>George Orwell</h4>
+            <h5>Born:<br> June 25, 1903, Motihari, Bengal, India<br>
+                Died:<br> January 21, 1950, London, England (aged 46)</h5>
+                <button><a href="george.html"> read more</a></button>
+          </div>
+          <div class="author-card" onclick="showBooks(3)">
+            <img src="bharathiyar.jpg" alt="மகாகவி பாரதி" />
+            <h4>மகாகவி பாரதி</h4>
+            <h5>Born:<br>	11 December 1882<br>
+                Died:	<br>12 September 1921 (aged 38)<br>
+              Other names	Bharatiyar, Subbaiah, <br>
+              Sakthi Dasan, Mahakavi, <br>Mundasu Kavignar, Veera Kavi</h5>
+              <button><a href="bharathiyar.html"> read more</a></button>
+          </div>
+          <div class="author-card" onclick="showBooks(4)">
+            <img
+              src="nama.jpg"
+              alt="நாமக்கல் கவிஞர் வெ. இராமலிங்கம் பிள்ளை"
+            />
+            <h4>நாமக்கல் கவிஞர் வெ. இராமலிங்கம் பிள்ளை</h4>
+            <h5>Namakkal V. Ramalingam Pillai (1888–1972) was a <br>
+              prominent freedom fighter from Namakkal.<br>
+               Ramalingam was born into the Chozhia Vellalar community.</h5>
+               <button><a href="nama.html"> read more</a></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Books Section -->
+      <section id="books" style="display: none">
+        <h2>Books by <span id="author-name"></span></h2>
+        <ul id="book-list"></ul>
+        <button onclick="goBack()">Back to Authors</button>
+      </section>
+
+      <!-- Book Details Section -->
+      <section id="book-details" style="display: none">
+        <h2>Book Details</h2>
+        <p><strong>Title:<br></Title:br> </strong> <span id="book-title"></span></p>
+        <p>
+          <strong>Description:<br> </strong> <span id="book-description"></span>
+        </p>
+        <p>
+          <button onclick="goBackToBooks()">Back to Books</button>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

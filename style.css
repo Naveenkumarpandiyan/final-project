@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #0a0a0a;
+  color: #333;
+}
+
+header {
+  background: #007bff;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+h4 {
+  color: #333;
+}
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+p {
+  color: #ffffff;
+}
+
+h2 {
+  color: #f7f9fb;
+  margin-bottom: 20px;
+}
+h3 {
+  color: #ffffff;
+}
+
+/* Author List */
+.author-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.author-card {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 50px;
+  background: rgb(253, 255, 255);
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.author-card:hover {
+  transform: scale(1.05);
+  background-color: #f7f9fb;
+  box-shadow: 0 17px 19px rgb(2, 57, 255);
+}
+
+.author-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+/* Book List */
+#book-list li {
+  list-style: none;
+  padding: 10px;
+  background: white;
+  margin-bottom: 10px;
+  border: 7px solid #0004094b;
+  cursor: pointer;
+}
+
+#book-list li:hover {
+  background: #0297fab3;
+}
+
+/* Buttons */
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.book img{
+
+    height: 600px;
+    width: 500px;
+}
+.book h2{
+    font-size: 90px;
+}
+.book h3{
+    font-size: 60px;
+}
+.book ul li{
+    font-size: 30px;
+    color: white;
+}
+.book h4{
+    font-size: 15px;
+    color:#007bff
+}
+.back-btn{
+  background-color: #0056b3;
+  margin: 20% 150% 5% 5%;
+  width: 110%;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+.back-btn a{
+  color: white;
+  text-decoration: none;
+}
